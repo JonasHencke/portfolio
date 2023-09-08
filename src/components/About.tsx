@@ -1,8 +1,19 @@
+import { motion } from "framer-motion";
+
 export default function About() {
   return (
     <div className="about-container">
-      <div className="about-header">Über mich</div>
-      <div className="about-text">
+      <motion.div className="about-header"
+       initial={{x:-100}}
+       whileInView={{x: 0}}
+       viewport={{once: true}}
+       transition={{ ease: "easeOut", duration: 1.3 }}>Über mich</motion.div>
+      <motion.div className="about-text"
+      initial={{x:100}}
+      whileInView={{x: 0}}
+      viewport={{once: true}}
+      transition={{ ease: "easeOut", duration: 1 }}
+      >
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
         voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
@@ -15,7 +26,7 @@ export default function About() {
         voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
         clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
         amet.
-      </div>
+      </motion.div>
     </div>
   );
 }
