@@ -31,10 +31,10 @@ body
     font-size: clamp(1.4rem, 2vw, 3.5rem)
 
 @mixin font-size-s
-    font-size: clamp(1.2rem, 1.3vw, 1.5rem)
+    font-size: clamp(1rem, 1.5vw, 1.8rem)
 
 @mixin font-size-xs
-    font-size: clamp(1rem, 1vw, 2rem)
+    font-size: clamp(0.8rem, 1.3vw, 1rem)
 
 /* ------------------------------------ */
 /* Navbar component */
@@ -71,6 +71,7 @@ body
         left: 5%
         width: 90%
         @include font-size-xs
+        gap: 2%
 
 /* ------------------------------------ */
 /* Hero component */
@@ -153,3 +154,8 @@ body
 @media (max-width: 1200px)
     .about-text
         width: 70%
+
+@media (max-width: 600px)
+    .about-text
+        width: 85%
+        text-align: left
