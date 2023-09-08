@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className="about-container">
       <motion.div className="about-header"
-       initial={{x:-100}}
+       initial={{x:-200}}
        whileInView={{x: 0}}
        viewport={{once: true}}
        transition={{ ease: "easeOut", duration: 1.3 }}>Über mich</motion.div>
