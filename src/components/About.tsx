@@ -5,7 +5,7 @@ export default function About() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: scrollRef,
-    offset: ["0 1", "0.7 1"],
+    offset: ["0 1", "0.8 1"],
   });
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   return (
