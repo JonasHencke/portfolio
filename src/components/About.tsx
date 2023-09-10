@@ -1,13 +1,21 @@
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 export default function About() {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: scrollRef,
+    offset: ["0 1", "0.7 1"],
+  });
+  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   return (
     <motion.div
       className="about-container"
-      initial={{ scale: 0.75, opacity: 0.5 }}
-      whileInView={{ scale: 1, opacity: 1 }}
-      viewport={{ once: true, amount: 0.5 }}
-      transition={{ ease: "easeOut", duration: 0.7 }}
+      ref={scrollRef}
+      style={{
+        scale: scaleProgess,
+        opacity: scrollYProgress,
+      }}
     >
       <div className="about-header">Über mich</div>
       <div className="about-text">
