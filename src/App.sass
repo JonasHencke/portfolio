@@ -162,7 +162,7 @@ body
 @media (max-width: 600px)
     .about-text
         width: 85%
-        text-align: justify
+        text-align: left
 
 /* ------------------------------------ */
 /* Project component */
@@ -193,6 +193,15 @@ body
     align-self: center
     line-height: 175%
 
+@media (max-width: 1200px)
+    .projects-text
+        width: 70%
+
+@media (max-width: 600px)
+    .projects-text
+        width: 85%
+        text-align: left
+
 .project-container
     margin: 4rem auto
     display: flex
@@ -201,8 +210,15 @@ body
     width: 50%
     border: none
     gap: 5%
-    
 
+@media (max-width: 1200px)
+    .project-container
+        width: 70%
+
+@media (max-width: 600px)
+    .project-container
+        width: 85%
+    
 .project-image
     width: 80%
     border-radius: 30px
