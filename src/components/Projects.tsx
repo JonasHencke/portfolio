@@ -12,7 +12,7 @@ export default function Projects() {
     target: scrollRef,
     offset: ["0 1", "0.8 1"],
   });
-  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
   return (
     <div className="projects-container">
       <motion.div
@@ -26,7 +26,7 @@ export default function Projects() {
         <div className="projects-header">Projekte</div>
         <div className="projects-text">
           Eine Auswahl meiner Projekte. <br /> Über die Buttons gelangt man zur
-          Live-Version oder zur jeweiligen GitHub repository, in welcher der
+          Live-Version und zu der jeweiligen GitHub repository, in welcher der
           Quellcode und die Beschreibung eingesehen werden kann.
         </div>
       </motion.div>
@@ -34,7 +34,7 @@ export default function Projects() {
         className="project-container"
         initial={{ x: 200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        viewport={{ once: false }}
+        viewport={{ once: true, amount: 0.3 }}
         transition={{ ease: "easeOut", duration: 0.7 }}
       >
         <img src={BookNook} className="project-image"></img>
@@ -51,7 +51,7 @@ export default function Projects() {
         className="project-container"
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        viewport={{ once: false }}
+        viewport={{ once: true, amount: 0.3 }}
         transition={{ ease: "easeOut", duration: 0.7 }}
       >
         <div className="project-button-container">
@@ -68,7 +68,7 @@ export default function Projects() {
         className="project-container"
         initial={{ x: 200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        viewport={{ once: false }}
+        viewport={{ once: true, amount: 0.3 }}
         transition={{ ease: "easeOut", duration: 0.7 }}
       >
         <img src={CVGenerator} className="project-image"></img>
