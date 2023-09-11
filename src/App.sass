@@ -185,7 +185,7 @@ body
 .projects-header
     @include font-size-l
     font-weight: 500
-    border-bottom: 0.75rem solid rgb(104, 205, 134)
+    border-bottom: 0.75rem solid #68cd86
     align-self: center
     margin-bottom: 3rem
     margin: 0 auto
@@ -252,11 +252,34 @@ body
 
 /* ------------------------------------ */
 /* Skills component */
-    
+
+.skills-header
+
+
 .skills-container
     width: 100%
     display: flex
+    flex-direction: column
     align-items: center
     justify-content: center
+
+.skills-collection
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    max-width: 50%
+    gap: 15px
+
+.skill-emblem
+    display: flex
+    @include font-size-s
+    justify-content: space-between
+    align-items: center
+    border: 2px solid #68cd86
+    border-radius: 15px
+    gap: 1rem
+    padding: 0.5rem 0.55rem
+    img
+        width: 2rem
 
     
