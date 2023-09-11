@@ -1,4 +1,5 @@
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react"
 import WetterApp from "../assets/Wetter-app.png";
 import CVGenerator from "../assets/CV-generator.png";
 import BookNook from "../assets/BookNook.png";
@@ -6,15 +7,36 @@ import githubSVG from "../assets/github-142-svgrepo-com.svg";
 import livepageSVG from "../assets/website-webpage-url-domain-svgrepo-com.svg";
 
 export default function Projects() {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: scrollRef,
+    offset: ["0 1", "0.8 1"],
+  });
+  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   return (
     <div className="projects-container">
-      <div className="projects-header">Projekte</div>
-      <div className="projects-text">
-        Eine Auswahl meiner Projekte. <br/> Über die Buttons
-        gelangt man zur Live-Version oder zur jeweiligen GitHub repository, in
-        welcher der Quellcode und die Beschreibung eingesehen werden kann.
-      </div>
-      <div className="project-container">
+      <motion.div
+        className="project-header-container"
+        ref={scrollRef}
+        style={{
+          scale: scaleProgess,
+          opacity: scrollYProgress,
+        }}
+      >
+        <div className="projects-header">Projekte</div>
+        <div className="projects-text">
+          Eine Auswahl meiner Projekte. <br /> Über die Buttons gelangt man zur
+          Live-Version oder zur jeweiligen GitHub repository, in welcher der
+          Quellcode und die Beschreibung eingesehen werden kann.
+        </div>
+      </motion.div>
+      <motion.div
+        className="project-container"
+        initial={{ x: 200, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        viewport={{ once: false }}
+        transition={{ ease: "easeOut", duration: 0.7 }}
+      >
         <img src={BookNook} className="project-image"></img>
         <div className="project-button-container">
           <div className="project-button">
@@ -24,8 +46,14 @@ export default function Projects() {
             <img src={githubSVG}></img>
           </div>
         </div>
-      </div>
-      <div className="project-container">
+      </motion.div>
+      <motion.div
+        className="project-container"
+        initial={{ x: -200, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        viewport={{ once: false }}
+        transition={{ ease: "easeOut", duration: 0.7 }}
+      >
         <div className="project-button-container">
           <div className="project-button">
             <img src={livepageSVG}></img>
@@ -35,8 +63,14 @@ export default function Projects() {
           </div>
         </div>
         <img src={WetterApp} className="project-image"></img>
-      </div>
-      <div className="project-container">
+      </motion.div>
+      <motion.div
+        className="project-container"
+        initial={{ x: 200, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        viewport={{ once: false }}
+        transition={{ ease: "easeOut", duration: 0.7 }}
+      >
         <img src={CVGenerator} className="project-image"></img>
         <div className="project-button-container">
           <div className="project-button">
@@ -46,7 +80,7 @@ export default function Projects() {
             <img src={githubSVG}></img>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
