@@ -37,7 +37,10 @@ export default function Projects() {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ ease: "easeOut", duration: 0.7 }}
       >
+        <div className="project-image-container">
+          <div className="project-header">E-commerce Webshop</div>
         <img src={BookNook} className="project-image"></img>
+        </div>
         <div className="project-button-container">
           <div className="project-button">
             <img src={livepageSVG}></img>
@@ -62,7 +65,10 @@ export default function Projects() {
             <img src={githubSVG}></img>
           </div>
         </div>
+        <div className="project-image-container">
+          <div className="project-header">Wetter App</div>
         <img src={WetterApp} className="project-image"></img>
+        </div>
       </motion.div>
       <motion.div
         className="project-container"
@@ -71,7 +77,10 @@ export default function Projects() {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ ease: "easeOut", duration: 0.7 }}
       >
+        <div className="project-image-container">
+          <div className="project-header">Lebenslauf Generator</div>
         <img src={CVGenerator} className="project-image"></img>
+        </div>
         <div className="project-button-container">
           <div className="project-button">
             <img src={livepageSVG}></img>

@@ -24,7 +24,7 @@ export default function Skills() {
 
     useEffect(() => {
         if (isInView) {
-            animate("div", { opacity: 1, scale: 1}, { delay: stagger(0.15) })
+            animate("div", { opacity: 1, scale: 1}, { delay: stagger(0.1) })
         }
      }, [isInView])
 
