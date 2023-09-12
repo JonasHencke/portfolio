@@ -257,23 +257,32 @@ body
 /* Skills component */
 
 .skills-container
+    padding-top: 10rem
+    padding-bottom: 20rem
     width: 100%
     display: flex
     flex-direction: column
     align-items: center
     justify-content: center
 
+.skills-header
+    @include font-size-l
+    font-weight: 500
+    border-bottom: 0.75rem solid rgb(104, 205, 134)
+    align-self: center
+    margin-bottom: 10rem
+
 .skills-collection
     display: flex
     justify-content: center
     flex-wrap: wrap
-    max-width: 50%
+    width: 50%
     gap: 15px
 
 .skill-emblem
     display: flex
     color: white
-    @include font-size-s
+    @include font-size-m
     justify-content: space-between
     align-items: center
     border: 2px solid #68cd86
@@ -282,6 +291,28 @@ body
     gap: 1rem
     padding: 0.5rem 0.55rem
     img
-        width: 1.9rem
+        width: 2.5rem
+
+    
+@media (max-width: 950px)
+    .skill-container
+        margin: 20vw auto
+
+    .skills-collection
+        width: 70%
+    
+    .skill-emblem
+        @include font-size-s
+        img
+            width: 1.8rem
+
+
+@media (max-width: 500px)
+    .skills-collection
+        width: 90%
+
+    .skill-emblem
+        img
+            width: 1.4rem
 
     

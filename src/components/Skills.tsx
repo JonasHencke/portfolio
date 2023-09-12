@@ -30,7 +30,7 @@ export default function Skills() {
 
     return(
             <div className="skills-container">
-                <div className="about-header">Skills</div>
+                <div className="skills-header">Skills</div>
                 <div className="skills-collection" ref={scope}>
                     <div className="skill-emblem">
                         <img src={HTML}></img>
