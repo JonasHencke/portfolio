@@ -31,6 +31,7 @@ export default function Skills() {
     return(
             <div className="skills-container">
                 <div className="skills-header">Skills</div>
+                <div className="skills-description">Mit den folgenden Technologien habe ich bereits in meinen Projekten gearbeitet:</div>
                 <div className="skills-collection" ref={scope}>
                     <div className="skill-emblem">
                         <img src={HTML}></img>
@@ -57,8 +58,16 @@ export default function Skills() {
                         <div>React-Router</div>
                     </div>
                     <div className="skill-emblem">
+                        <img src={FramerMotion}></img>
+                        <div>Framer Motion</div>
+                    </div>
+                    <div className="skill-emblem">
                         <img src={SASS}></img>
                         <div>SASS</div>
+                    </div>
+                    <div className="skill-emblem">
+                        <img src={Vite}></img>
+                        <div>Vite</div>
                     </div>
                     <div className="skill-emblem">
                         <img src={Webpack}></img>
@@ -72,15 +81,6 @@ export default function Skills() {
                         <img src={GitHub}></img>
                         <div>GitHub</div>
                     </div>
-                    <div className="skill-emblem">
-                        <img src={FramerMotion}></img>
-                        <div>Framer Motion</div>
-                    </div>
-                    <div className="skill-emblem">
-                        <img src={Vite}></img>
-                        <div>Vite</div>
-                    </div>
-                    
                 </div>
             </div>
     )

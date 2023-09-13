@@ -283,7 +283,25 @@ body
     font-weight: 500
     border-bottom: 0.75rem solid rgb(104, 205, 134)
     align-self: center
-    margin-bottom: 10rem
+
+.skills-description
+    font-weight: 300
+    margin: 4rem auto
+    @include font-size-s
+    width: 50%
+    max-width: 1000px
+    text-align: justify
+    align-self: center
+    line-height: 175%
+
+@media (max-width: 1200px)
+    .skills-description
+        width: 70%
+
+@media (max-width: 600px)
+    .skills-description
+        width: 85%
+        text-align: left
 
 .skills-collection
     display: flex
