@@ -371,7 +371,29 @@ body
     width: 100%
     justify-content: center
     gap: 3vw
-    margin-bottom: 10rem
+    margin: 5rem auto
+
+.contact-text
+    font-weight: 300
+    @include font-size-s
+    width: 50%
+    max-width: 1000px
+    text-align: justify
+    align-self: center
+    line-height: 175%
+    span
+        color: rgb(104, 205, 134)
+        font-weight: 500
+
+@media (max-width: 1200px)
+    .contact-text
+        width: 70%
+
+@media (max-width: 600px)
+    .contact-text
+        width: 85%
+        text-align: left
+
 
 .contact-form
     display: flex
@@ -394,6 +416,8 @@ body
     border: none
     border-radius: 15px
     height: 2rem
+    padding-left: 1rem
+    @include font-size-xs
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 2px 3px -1px
 
 .contact-form-mail
@@ -401,6 +425,8 @@ body
     border: none
     border-radius: 15px
     height: 2rem
+    padding-left: 1rem
+    @include font-size-xs
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 2px 3px -1px
 
 .contact-form-message
@@ -409,6 +435,9 @@ body
     border-radius: 15px
     resize: none
     height: 14rem
+    padding-left: 1rem
+    font-family: sans-serif
+    @include font-size-xs
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 2px 3px -1px
 
 .contact-form-button
@@ -439,14 +468,15 @@ body
     justify-content: start
     align-items: center
     @include font-size-xs
-    color: #68cd86
-    font-weight: 800
+    color: black
+    font-weight: 300
     gap: 10%
     height: 3.5rem
     width: 85%
     border-radius: 15px
     background-color: white
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 2px 3px -1px
+    cursor: pointer
     img
         width: 18%
         margin-left: 5%
