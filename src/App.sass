@@ -57,11 +57,13 @@ body
     z-index: 100
     
 .navbar
-    div
+    a
         padding: 0.1rem 0.5rem
         border-radius: 100px
+        text-decoration: none
+        color: rgba(0, 0, 0, 0.75)
     
-    div:hover
+    a:hover
         transition: all .1s ease-in-out
         transform: scale(1.1)
         color: rgb(104, 205, 134)
@@ -372,7 +374,7 @@ body
     justify-content: center
     gap: 3vw
     margin: 5rem auto
-    
+
 .contact-header-container
     width: 100%
     display: flex
@@ -425,7 +427,7 @@ body
     height: 2rem
     padding-left: 1rem
     @include font-size-xs
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 2px 3px -1px
+    box-shadow: inset rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, inset rgba(0, 0, 0, 0.3) 0px 2px 3px -1px
 
 .contact-form-mail
     width: 90%
@@ -434,7 +436,7 @@ body
     height: 2rem
     padding-left: 1rem
     @include font-size-xs
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 2px 3px -1px
+    box-shadow: inset rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,  inset rgba(0, 0, 0, 0.3) 0px 2px 3px -1px
 
 .contact-form-message
     width: 90%
@@ -445,7 +447,7 @@ body
     padding-left: 1rem
     font-family: sans-serif
     @include font-size-xs
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 2px 3px -1px
+    box-shadow: inset rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,  inset rgba(0, 0, 0, 0.3) 0px 2px 3px -1px
 
 .contact-form-button
     border: #68cd86 1px solid
@@ -454,7 +456,7 @@ body
     border-radius: 15px
     height: 2rem
     margin-bottom: 1rem
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 2px 3px -1px
+    box-shadow: inset rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,  inset rgba(0, 0, 0, 0.3) 0px 2px 3px -1px
     @include font-size-xs
     color: black
 
@@ -482,7 +484,7 @@ body
     width: 85%
     border-radius: 15px
     background-color: white
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 2px 3px -1px
+    box-shadow: inset rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, inset rgba(0, 0, 0, 0.3) 0px 2px 3px -1px
     cursor: pointer
     img
         width: 18%

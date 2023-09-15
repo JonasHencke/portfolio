@@ -40,7 +40,7 @@ export default function Skills() {
   }, [isInView]);
 
   return (
-    <div className="skills-container">
+    <section className="skills-container" id="skills">
       <motion.div
         className="skills-header-container"
         ref={scrollRef}
@@ -105,6 +105,6 @@ export default function Skills() {
           <div>GitHub</div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -15,7 +15,7 @@ export default function Contact() {
   });
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
   return (
-    <div className="contact-container">
+    <section className="contact-container" id="contact">
       <motion.div
         className="contact-header-container"
         ref={scrollRef}
@@ -63,6 +63,6 @@ export default function Contact() {
           </div>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 }

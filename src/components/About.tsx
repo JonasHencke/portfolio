@@ -9,7 +9,8 @@ export default function About() {
   });
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   return (
-    <motion.div
+    <motion.section
+    id="about" 
       className="about-container"
       ref={scrollRef}
       style={{
@@ -37,6 +38,6 @@ export default function About() {
         Für viele weiteren Technologien bin ich offen. Neben dem Frontend habe
         ich auch großes Interesse für Technologien im Backend.
       </div>
-    </motion.div>
+    </motion.section>
   );
 }

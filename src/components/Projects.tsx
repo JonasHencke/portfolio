@@ -14,7 +14,7 @@ export default function Projects() {
   });
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
   return (
-    <div className="projects-container">
+    <section className="projects-container" id="projects">
       <motion.div
         className="project-header-container"
         ref={scrollRef}
@@ -90,6 +90,6 @@ export default function Projects() {
           </div>
         </div>
       </motion.div>
-    </div>
+    </section>
   );
 }

@@ -6,10 +6,10 @@ export default function Navbar() {
             initial={{ y: -100, opacity: 0}}
             animate = {{y: 0, opacity: 1}}
             transition={{ ease: "easeOut", duration: 0.6 }}>
-                <div>Über mich</div>
-                <div>Projekte</div>
-                <div>Skills</div>
-                <div>Kontakt</div>
+                <a href="#about">Über mich</a>
+                <a href="#projects">Projekte</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Kontakt</a>
             </motion.nav>
     )
 }
