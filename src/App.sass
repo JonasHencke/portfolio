@@ -47,7 +47,7 @@ body
     @include glassmorphism-card
     position: fixed
     top: 2rem
-    left: 30%
+    left: 27.5%
     width: 45%
     display: flex
     justify-content: space-evenly
@@ -133,7 +133,7 @@ body
     padding: 1rem 2rem
     border-radius: 100px
 
-.hero-button:hover
+.hero-button-container:hover
     transition: all .1s ease-in-out
     transform: scale(1.1)
     
@@ -485,7 +485,7 @@ body
     border-radius: 30px
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 2px 3px -1px
 
-.social-github, .social-linkedin, .social-telegram, .social-email
+.social-link
     display: flex
     justify-content: start
     align-items: center
@@ -499,11 +499,12 @@ body
     background-color: white
     box-shadow: inset rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, inset rgba(0, 0, 0, 0.3) 0px 2px 3px -1px
     cursor: pointer
+    text-decoration: none
     img
         width: 18%
         margin-left: 5%
 
-.social-github:hover, .social-linkedin:hover, .social-telegram:hover, .social-email:hover
+.social-link:hover
     width: 90%
 
 @media (max-width: 1050px)

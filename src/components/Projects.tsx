@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react"
+import { useRef } from "react";
 import WetterApp from "../assets/Wetter-app.png";
 import CVGenerator from "../assets/CV-generator.png";
 import BookNook from "../assets/BookNook.png";
@@ -39,14 +39,18 @@ export default function Projects() {
       >
         <div className="project-image-container">
           <div className="project-header">E-commerce Webshop</div>
-        <img src={BookNook} className="project-image"></img>
+          <img src={BookNook} className="project-image"></img>
         </div>
         <div className="project-button-container">
           <div className="project-button">
-            <img src={livepageSVG}></img>
+            <a href="">
+              <img src={livepageSVG}></img>
+            </a>
           </div>
           <div className="project-button">
-            <img src={githubSVG}></img>
+            <a href="https://github.com/jonas-1997/bookstore">
+              <img src={githubSVG}></img>
+            </a>
           </div>
         </div>
       </motion.div>
@@ -59,15 +63,19 @@ export default function Projects() {
       >
         <div className="project-button-container">
           <div className="project-button">
-            <img src={livepageSVG}></img>
+            <a href="">
+              <img src={livepageSVG}></img>
+            </a>
           </div>
           <div className="project-button">
-            <img src={githubSVG}></img>
+            <a href="https://github.com/jonas-1997/weather-app">
+              <img src={githubSVG}></img>
+            </a>
           </div>
         </div>
         <div className="project-image-container">
           <div className="project-header">Wetter App</div>
-        <img src={WetterApp} className="project-image"></img>
+          <img src={WetterApp} className="project-image"></img>
         </div>
       </motion.div>
       <motion.div
@@ -79,14 +87,18 @@ export default function Projects() {
       >
         <div className="project-image-container">
           <div className="project-header">Lebenslauf Generator</div>
-        <img src={CVGenerator} className="project-image"></img>
+          <img src={CVGenerator} className="project-image"></img>
         </div>
         <div className="project-button-container">
           <div className="project-button">
-            <img src={livepageSVG}></img>
+            <a href="">
+              <img src={livepageSVG}></img>
+            </a>
           </div>
           <div className="project-button">
-            <img src={githubSVG}></img>
+            <a href="https://github.com/jonas-1997/CV-application">
+              <img src={githubSVG}></img>
+            </a>
           </div>
         </div>
       </motion.div>

@@ -41,26 +41,26 @@ export default function Contact() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ ease: "easeOut", duration: 0.7 }}
         >
-          <div className="social-github">
+          <a href="https://github.com/jonas-1997" className="social-link">
             <img src={github}></img>
             <div>GitHub</div>
-          </div>
-          <div className="social-linkedin">
+          </a>
+          <a href="https://linkedin.com" className="social-link">
             <img src={linkedin}></img>
             <div>LinkedIn</div>
-          </div>
-          <div className="social-email">
+          </a>
+          <a href="https://xing.com" className="social-link">
             <img src={xing}></img>
             <div>Xing</div>
-          </div>
-          <div className="social-email">
+          </a>
+          <a href="https://gmail.com" className="social-link">
             <img src={gmail}></img>
             <div>E-Mail</div>
-          </div>
-          <div className="social-telegram">
+          </a>
+          <a href="https://telegram.org" className="social-link">
             <img src={telegram}></img>
             <div>Telegram</div>
-          </div>
+          </a>
         </motion.div>
       </div>
     </section>

@@ -37,7 +37,7 @@ export default function Hero() {
         Begeistert von gutem Design und modernen Technologien. Mit viel Neugier
         und dem Ziel lebenslang zu lernen.
       </motion.div>
-      <a href="#about">
+      <a href="#about" className="hero-button-container">
       <motion.button
         className="hero-button"
         initial={{ y: 200, opacity: 0.5 }}
