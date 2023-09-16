@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import logo from "../assets/letter-j-svgrepo-com.svg"
 
 export default function Navbar() {
   return (
@@ -9,7 +10,7 @@ export default function Navbar() {
       transition={{ ease: "easeOut", duration: 0.6 }}
     >
       <a href="#hero">
-        <p data-to-scrollspy-id="hero">Hero</p>
+        <p data-to-scrollspy-id="hero">Home</p>
       </a>
       <a href="#about">
         <p data-to-scrollspy-id="about">Über mich</p>
