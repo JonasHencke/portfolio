@@ -11,8 +11,8 @@ function App() {
   return (
     <div>
       <Navbar />
-      <ScrollSpy activeClass="ss-active-demo-2" scrollThrottle={300} useBoxMethod={true}>
-        <Hero />
+      <ScrollSpy activeClass="ss-active-demo-2" scrollThrottle={50} useBoxMethod={true}>
+        <Hero/>
         <About />
         <Projects />
         <Skills />

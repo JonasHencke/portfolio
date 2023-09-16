@@ -8,6 +8,9 @@ export default function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ ease: "easeOut", duration: 0.6 }}
     >
+      <a href="#hero">
+        <p data-to-scrollspy-id="hero">Hero</p>
+      </a>
       <a href="#about">
         <p data-to-scrollspy-id="about">Über mich</p>
       </a>

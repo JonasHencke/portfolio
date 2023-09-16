@@ -6,7 +6,9 @@
     padding: 0px
     font-family: sans-serif
 
-
+html 
+  scroll-behavior: smooth
+  scroll-padding-top: 100px
 
 body 
     background-color: white
@@ -46,7 +48,7 @@ body
     position: fixed
     top: 2rem
     left: 30%
-    width: 40%
+    width: 45%
     display: flex
     justify-content: space-evenly
     align-items: center
@@ -64,13 +66,15 @@ body
     p
         padding: 0.1rem 0.5rem
         margin: 0
-        border-radius: 100px
+        border-radius: 8px
         text-decoration: none
         color: rgba(0, 0, 0, 0.75)
     
     p:hover
         transition: all .1s ease-in-out
         transform: scale(1.1)
+
+    .ss-active-demo-2
         color: rgb(104, 205, 134)
 
 @media (max-width: 1000px) 
@@ -79,9 +83,6 @@ body
         width: 90%
         @include font-size-xs
         gap: 2%
-
-.ss-active-demo-2
-    background-color: rgba(104, 205, 134, 0.9)
 
 /* ------------------------------------ */
 /* Hero component */
@@ -141,7 +142,8 @@ body
 /* About component */
 
 .about-container
-    margin-top: 4.5rem
+    margin-top: 5rem
+    margin-bottom: 5rem
     width: 100%
     display: flex
     justify-content: center
@@ -154,6 +156,7 @@ body
     border-bottom: 0.75rem solid rgb(104, 205, 134)
     align-self: center
     margin-bottom: 3rem
+    margin-top: 5rem
     
 
 .about-text
@@ -181,7 +184,8 @@ body
 /* Project component */
 
 .projects-container
-    margin-top: 10rem
+    margin-top: 5rem
+    margin-bottom: 10rem
     width: 100%
     display: flex
     justify-content: center
@@ -202,6 +206,7 @@ body
     align-self: center
     margin-bottom: 3rem
     margin: 0 auto
+    margin-top: 5rem
 
 .projects-text
     font-weight: 300
@@ -280,7 +285,6 @@ body
 /* Skills component */
 
 .skills-container
-    padding-top: 10rem
     padding-bottom: 20rem
     width: 100%
     display: flex
@@ -300,6 +304,7 @@ body
     font-weight: 500
     border-bottom: 0.75rem solid rgb(104, 205, 134)
     align-self: center
+    margin-top: 5rem
 
 .skills-description
     font-weight: 300

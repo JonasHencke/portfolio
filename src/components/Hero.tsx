@@ -3,7 +3,7 @@ import profilePicture from "../assets/profile_picture.jpg";
 
 export default function Hero() {
   return (
-    <div className="hero-container">
+    <section className="hero-container" id="hero">
       <div className="hero-image-container">
         <motion.img
           src={profilePicture}
@@ -37,14 +37,17 @@ export default function Hero() {
         Begeistert von gutem Design und modernen Technologien. Mit viel Neugier
         und dem Ziel lebenslang zu lernen.
       </motion.div>
+      <a href="#about">
       <motion.button
         className="hero-button"
         initial={{ y: 200, opacity: 0.5 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ ease: "easeOut", duration: 1 }}
       >
-        Mehr Infos ↓
+       Mehr Infos ↓
+        
       </motion.button>
-    </div>
+      </a>
+    </section>
   );
 }
