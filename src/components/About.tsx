@@ -7,10 +7,14 @@ export default function About() {
     target: scrollRef,
     offset: ["0 1", "0.8 1"],
   });
-  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const scaleProgess = useTransform<unknown, number>(
+    scrollYProgress,
+    [0, 1],
+    [0.8, 1]
+  );
   return (
     <motion.section
-    id="about" 
+      id="about"
       className="about-container"
       ref={scrollRef}
       style={{

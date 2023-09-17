@@ -9,7 +9,7 @@ export default function Hero() {
           src={profilePicture}
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{type: "spring", duration: 1 }}
+          transition={{ type: "spring", duration: 1 }}
         />
       </div>
       <motion.div
@@ -38,15 +38,14 @@ export default function Hero() {
         und dem Ziel lebenslang zu lernen.
       </motion.div>
       <a href="#about" className="hero-button-container">
-      <motion.button
-        className="hero-button"
-        initial={{ y: 200, opacity: 0.5 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ ease: "easeOut", duration: 1 }}
-      >
-       Mehr Infos ↓
-        
-      </motion.button>
+        <motion.button
+          className="hero-button"
+          initial={{ y: 200, opacity: 0.5 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 1 }}
+        >
+          Mehr Infos ↓
+        </motion.button>
       </a>
     </section>
   );

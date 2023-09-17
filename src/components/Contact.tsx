@@ -13,7 +13,11 @@ export default function Contact() {
     target: scrollRef,
     offset: ["0 1", "0.8 1"],
   });
-  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
+  const scaleProgess = useTransform<unknown, number>(
+    scrollYProgress,
+    [0, 1],
+    [0.5, 1]
+  );
   return (
     <section className="contact-container" id="contact">
       <motion.div

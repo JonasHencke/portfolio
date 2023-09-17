@@ -21,14 +21,18 @@ import {
 import { useEffect, useRef } from "react";
 
 export default function Skills() {
-  const [scope, animate] = useAnimate();
+  const [scope, animate] = useAnimate<any>();
   const isInView = useInView(scope);
   const scrollRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: scrollRef,
     offset: ["0 1", "0.8 1"],
   });
-  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
+  const scaleProgess = useTransform<unknown, number>(
+    scrollYProgress,
+    [0, 1],
+    [0.5, 1]
+  );
   useEffect(() => {
     animate("div", { opacity: 0, scale: 0 });
   }, []);
