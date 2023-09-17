@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import logo from "../assets/letter-j-svgrepo-com.svg"
 
 export default function Navbar() {
   return (
