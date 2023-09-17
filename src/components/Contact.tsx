@@ -24,7 +24,7 @@ export default function Contact() {
           opacity: scrollYProgress,
         }}
       >
-        <div className="about-header">Kontakt</div>
+        <div className="contact-header">Kontakt</div>
         <div className="contact-text">
           Mit dem Ausfüllen und Senden des Formulars erhalte ich eine Mail mit
           Ihrer Nachricht, so können Sie mich schnellstmöglich erreichen.
