@@ -95,7 +95,7 @@ export default function Projects() {
         </div>
         <div className="project-button-container">
           <div className="project-button">
-            <a href="">
+            <a href="https://jonas-1997.github.io/CV-application/">
               <img src={livepageSVG}></img>
             </a>
           </div>
