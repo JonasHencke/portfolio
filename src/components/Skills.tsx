@@ -10,6 +10,9 @@ import Git from "../assets/SVGs/git.svg";
 import GitHub from "../assets/SVGs/github.svg";
 import FramerMotion from "../assets/SVGs/framer-motion.svg";
 import Vite from "../assets/SVGs/vite.svg";
+import npm from "../assets/SVGs/npm.svg"
+import VSCode from "../assets/SVGs/vscode.svg"
+
 import {
   motion,
   useAnimate,
@@ -39,7 +42,7 @@ export default function Skills() {
 
   useEffect(() => {
     if (isInView) {
-      animate("div", { opacity: 1, scale: 1 }, { delay: stagger(0.1) });
+      animate("div", { opacity: 1, scale: 1 }, { delay: stagger(0.07) });
     }
   }, [isInView]);
 
@@ -107,6 +110,14 @@ export default function Skills() {
         <div className="skill-emblem">
           <img src={GitHub}></img>
           <div>GitHub</div>
+        </div>
+        <div className="skill-emblem">
+          <img src={VSCode}></img>
+          <div>VSCode</div>
+        </div>
+        <div className="skill-emblem">
+          <img src={npm}></img>
+          <div>npm</div>
         </div>
       </div>
     </section>
