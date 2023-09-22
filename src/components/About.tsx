@@ -40,7 +40,9 @@ export default function About() {
         <br />
         <br />
         Für viele weiteren Technologien bin ich offen. Neben dem Frontend habe
-        ich auch großes Interesse für Technologien im Backend.
+        ich auch großes Interesse für Technologien im Backend. Erfahrungen mit dem
+        Backend-as-a-Service Programm <span>Firebase</span> habe ich
+        bereits gemacht.
       </div>
     </motion.section>
   );
