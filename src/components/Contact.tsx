@@ -57,11 +57,11 @@ export default function Contact() {
             <img src={xing}></img>
             <div>Xing</div>
           </a>
-          <a href="https://gmail.com" className="social-link">
+          <a href="mailto:henckejonas@googlemail.com" className="social-link">
             <img src={gmail}></img>
             <div>E-Mail</div>
           </a>
-          <a href="https://telegram.org" className="social-link">
+          <a href="https://t.me/JonasHencke" className="social-link">
             <img src={telegram}></img>
             <div>Telegram</div>
           </a>

@@ -442,27 +442,27 @@ body
 
 .contact-form-name
     margin-top: 1rem
-    width: 90%
+    width: 85%
     border: none
     border-radius: 15px
     height: 2rem
-    padding-left: 1rem
+    padding: 0 1rem
     @include font-size-xs
     box-shadow: inset rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, inset rgba(0, 0, 0, 0.3) 0px 2px 3px -1px
     -webkit-appearance: none
 
 .contact-form-mail
-    width: 90%
+    width: 85%
     border: none
     border-radius: 15px
     height: 2rem
-    padding-left: 1rem
+    padding: 0 1rem
     @include font-size-xs
     box-shadow: inset rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,  inset rgba(0, 0, 0, 0.3) 0px 2px 3px -1px
     -webkit-appearance: none
 
 .contact-form-message
-    width: 90%
+    width: 85%
     border: #68cd86 1px solid
     border-radius: 15px
     resize: none
@@ -480,9 +480,15 @@ body
     border-radius: 15px
     height: 2rem
     margin-bottom: 1rem
-    box-shadow: inset rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,  inset rgba(0, 0, 0, 0.3) 0px 2px 3px -1px
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 2px 3px -1px
     @include font-size-xs
     color: black
+
+.contact-form-button:hover
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 1px 1px -1px, rgba(0, 0, 0, 0.3) 0px 1px 1px -1px
+
+.contact-form-button:active
+    box-shadow: inset rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,  inset rgba(0, 0, 0, 0.3) 0px 2px 3px -1px
 
 .socials-container
     display: flex
