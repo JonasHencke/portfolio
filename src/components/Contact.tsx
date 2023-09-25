@@ -45,7 +45,7 @@ export default function Contact() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ ease: "easeOut", duration: 0.7 }}
         >
-          <a href="https://github.com/jonas-1997" className="social-link">
+          <a href="https://github.com/JonasHencke" className="social-link">
             <img src={github}></img>
             <div>GitHub</div>
           </a>

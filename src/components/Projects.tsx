@@ -52,7 +52,7 @@ export default function Projects() {
             </a>
           </div>
           <div className="project-button">
-            <a href="https://github.com/jonas-1997/bookstore">
+            <a href="https://github.com/JonasHencke/bookstore">
               <img src={githubSVG}></img>
             </a>
           </div>
@@ -72,7 +72,7 @@ export default function Projects() {
             </a>
           </div>
           <div className="project-button">
-            <a href="https://github.com/jonas-1997/weather-app">
+            <a href="https://github.com/JonasHencke/weather-app">
               <img src={githubSVG}></img>
             </a>
           </div>
@@ -95,12 +95,12 @@ export default function Projects() {
         </div>
         <div className="project-button-container">
           <div className="project-button">
-            <a href="https://jonas-1997.github.io/CV-application/">
+            <a href="https://JonasHencke.github.io/CV-application/">
               <img src={livepageSVG}></img>
             </a>
           </div>
           <div className="project-button">
-            <a href="https://github.com/jonas-1997/CV-application">
+            <a href="https://github.com/JonasHencke/CV-application">
               <img src={githubSVG}></img>
             </a>
           </div>
