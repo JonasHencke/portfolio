@@ -331,6 +331,7 @@ body
     flex-wrap: wrap
     width: 50%
     gap: 15px
+    max-width: 1000px
 
 .skill-emblem
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 2px 3px -1px
@@ -387,6 +388,7 @@ body
     justify-content: center
     gap: 3vw
     margin: 5rem auto
+    max-width: calc(2000px - 6vw)
 
 .contact-header-container
     width: 100%
@@ -538,6 +540,15 @@ body
         padding: 2rem 0
         img
             width: 8%
+
+    .contact-form-name
+        width: calc(85% - 2rem)
+
+    .contact-form-mail
+        width: calc(85% - 2rem)
+
+    .contact-form-message
+        width: calc(85% - 2rem)
 
 @media (max-width: 500px)
     .contact-form
