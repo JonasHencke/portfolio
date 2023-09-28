@@ -47,7 +47,7 @@ export default function Projects() {
         </div>
         <div className="project-button-container">
           <div className="project-button">
-            <a href="">
+            <a href="https://jonashencke.github.io/bookstore/#/">
               <img src={livepageSVG}></img>
             </a>
           </div>
@@ -67,7 +67,7 @@ export default function Projects() {
       >
         <div className="project-button-container">
           <div className="project-button">
-            <a href="">
+            <a href="https://JonasHencke.github.io/weather-app/">
               <img src={livepageSVG}></img>
             </a>
           </div>
