@@ -7,7 +7,19 @@ import linkedin from "../assets/linkedin-svgrepo-com.svg";
 import gmail from "../assets/gmail-svgrepo-com (1).svg";
 import xing from "../assets/xing-svgrepo-com.svg";
 
-export default function Contact() {
+interface ContactProps {
+  notifications: { id: number; message: string }[];
+  setNotifications: React.Dispatch<
+    React.SetStateAction<
+      {
+        id: number;
+        message: string;
+      }[]
+    >
+  >;
+}
+
+export default function Contact(props: ContactProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: scrollRef,
@@ -37,7 +49,10 @@ export default function Contact() {
         </div>
       </motion.div>
       <div className="contact-flex-container">
-        <ContactUs />
+        <ContactUs
+          setNotifications={props.setNotifications}
+          notifications={props.notifications}
+        />
         <motion.div
           className="socials-container"
           initial={{ x: 200, opacity: 0 }}

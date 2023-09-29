@@ -6,10 +6,16 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import ScrollSpy from "react-ui-scrollspy";
+import Notifications from "./components/Notifications";
+import { useState } from "react";
 
 function App() {
+  const [notifications, setNotifications] = useState<
+    { id: number; message: string }[]
+  >([]);
   return (
     <div>
+      <Notifications notifications={notifications} />
       <Navbar />
       <ScrollSpy
         activeClass="ss-active-demo-2"
@@ -20,7 +26,10 @@ function App() {
         <About />
         <Projects />
         <Skills />
-        <Contact />
+        <Contact
+          notifications={notifications}
+          setNotifications={setNotifications}
+        />
       </ScrollSpy>
     </div>
   );
