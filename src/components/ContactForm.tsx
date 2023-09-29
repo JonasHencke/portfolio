@@ -14,7 +14,7 @@ interface ContactUsProps {
   >;
 }
 export const ContactUs = (props: ContactUsProps) => {
-  const form = useRef<null>(null);
+  const form = useRef();
 
   function addNotification(message: string) {
     const newNote = { id: Math.floor(Math.random() * 500), message: message };
@@ -37,22 +37,24 @@ export const ContactUs = (props: ContactUsProps) => {
     setTimeout(removeNotification, 6000);
   }
 
-  const sendEmail = (e: any) => {
+  const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_nbxn6gm",
+        "template_45givuk",
         form.current,
-        "YOUR_PUBLIC_KEY"
+        "h12ZDsqnnyJy872s_"
       )
       .then(
         (result) => {
           mailSuccess();
+          console.log(result)
         },
         (error) => {
           mailFail();
+          console.log(error)
         }
       );
   };
