@@ -15,7 +15,10 @@ function App() {
   >([]);
   return (
     <div>
-      <Notifications notifications={notifications} />
+      <Notifications
+        notifications={notifications}
+        setNotifications={setNotifications}
+      />
       <Navbar />
       <ScrollSpy
         activeClass="ss-active-demo-2"

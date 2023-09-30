@@ -17,24 +17,17 @@ export const ContactUs = (props: ContactUsProps) => {
   const form = useRef();
 
   function addNotification(message: string) {
-    const newNote = { id: Math.floor(Math.random() * 500), message: message };
+    const id = Math.floor(Math.random() * 500)
+    const newNote = { id: id, message: message };
     props.setNotifications([...props.notifications, newNote]);
   }
 
-  function removeNotification() {
-    props.setNotifications(
-      props.notifications.slice(1, props.notifications.length)
-    );
-  }
-
   function mailSuccess() {
-    addNotification("E-Mail erfolgreich versandt! ✅");
-    setTimeout(removeNotification, 6000);
+    addNotification("✅ E-Mail erfolgreich versandt! ");
   }
 
   function mailFail() {
-    addNotification("E-Mail konnte nicht versandt werden ❌");
-    setTimeout(removeNotification, 6000);
+    addNotification("❌ E-Mail konnte nicht versandt werden");
   }
 
   const sendEmail = (e) => {
@@ -89,6 +82,7 @@ export const ContactUs = (props: ContactUsProps) => {
         />
         <input type="submit" value="Send" className="contact-form-button" />
       </motion.form>
+      <button onClick={() => mailFail()}></button>
     </>
   );
 };
