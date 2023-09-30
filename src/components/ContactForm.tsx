@@ -30,6 +30,10 @@ export const ContactUs = (props: ContactUsProps) => {
     addNotification("❌ E-Mail konnte nicht versandt werden");
   }
 
+  function resetContactForm() {
+    document.getElementById("contact-form").reset();
+  }
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -50,13 +54,15 @@ export const ContactUs = (props: ContactUsProps) => {
           console.log(error)
         }
       );
+      resetContactForm();
   };
 
   return (
     <>
       <motion.form
         ref={form}
-        onSubmit={sendEmail}
+        id="contact-form"
+        onSubmit={resetContactForm}
         className="contact-form"
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
