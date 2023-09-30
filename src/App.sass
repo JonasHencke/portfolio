@@ -1,11 +1,20 @@
 /* ------------------------------------ */
 /* general */
+html[data-theme='light']
+    --text-color: black
+    --background-color: white
+
+html[data-theme='dark']
+    --text-color: white
+    --background-color: #252525
 
 #root, body, html
     margin: 0px
     padding: 0px
     font-family: sans-serif
     overflow-x: hidden
+    color: var(--text-color)
+    background-color: var(--background-color)
 
 html 
   scroll-behavior: smooth
@@ -103,6 +112,10 @@ body
         height: auto
         border-radius: 50%
         filter: brightness(1.15)
+
+.dark
+    background-color: #252525
+    color: white
 
 .hero-image-container
     display: flex

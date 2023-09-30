@@ -62,7 +62,7 @@ export const ContactUs = (props: ContactUsProps) => {
       <motion.form
         ref={form}
         id="contact-form"
-        onSubmit={resetContactForm}
+        onSubmit={sendEmail}
         className="contact-form"
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
@@ -88,7 +88,6 @@ export const ContactUs = (props: ContactUsProps) => {
         />
         <input type="submit" value="Send" className="contact-form-button" />
       </motion.form>
-      <button onClick={() => mailFail()}></button>
     </>
   );
 };

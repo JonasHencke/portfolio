@@ -1,9 +1,12 @@
 import { motion } from "framer-motion";
+import { useContext } from "react";
+import { ThemeContext, ThemeContextType } from "../App";
 import profilePicture from "../assets/profile_picture.jpg";
 
 export default function Hero() {
+  const { theme, setTheme } = useContext<ThemeContextType>(ThemeContext)
   return (
-    <section className="hero-container" id="hero">
+    <section className={`${theme} hero-container`} id="hero">
       <div className="hero-image-container">
         <motion.img
           src={profilePicture}
@@ -20,6 +23,7 @@ export default function Hero() {
       >
         Jonas Hencke
       </motion.div>
+      <button onClick={() => setTheme(theme ==="light" ? "dark" : "light")}></button>
       <motion.div
         className="hero-title"
         initial={{ y: 200, opacity: 0 }}

@@ -7,14 +7,35 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import ScrollSpy from "react-ui-scrollspy";
 import Notifications from "./components/Notifications";
-import { useState } from "react";
+import { useEffect, useState, createContext } from "react";
+
+export interface ThemeContextType {
+  theme: "light" | "dark";
+  setTheme: React.Dispatch<React.SetStateAction<"light" | "dark">>;
+}
+const initialContext: ThemeContextType = {
+  theme: "light",
+  setTheme: () => {},
+}
+export const ThemeContext = createContext<ThemeContextType>(initialContext)
 
 function App() {
+  const [theme, setTheme] = useState<"light" | "dark">("light")
   const [notifications, setNotifications] = useState<
     { id: number; message: string }[]
   >([]);
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    console.log("the shit has switched!")
+  }, [theme])
   return (
-    <div>
+    <div data-theme={theme}>
+      <ThemeContext.Provider
+      value={{
+        theme,
+        setTheme
+      }}>
       <Notifications
         notifications={notifications}
         setNotifications={setNotifications}
@@ -34,6 +55,7 @@ function App() {
           setNotifications={setNotifications}
         />
       </ScrollSpy>
+      </ThemeContext.Provider>
     </div>
   );
 }
