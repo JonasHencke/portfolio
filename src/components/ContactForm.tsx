@@ -1,4 +1,5 @@
-import { useRef } from "react";
+import { useRef, useContext } from "react";
+import { ThemeContext, ThemeContextType } from "../App";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 
@@ -14,6 +15,7 @@ interface ContactUsProps {
   >;
 }
 export const ContactUs = (props: ContactUsProps) => {
+  const { theme } = useContext<ThemeContextType>(ThemeContext)
   const form = useRef();
 
   function addNotification(message: string) {
@@ -63,7 +65,7 @@ export const ContactUs = (props: ContactUsProps) => {
         ref={form}
         id="contact-form"
         onSubmit={sendEmail}
-        className="contact-form"
+        className={`${theme}-contact-form contact-form`}
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true, amount: 0.3 }}

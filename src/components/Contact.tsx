@@ -1,6 +1,7 @@
 import { ContactUs } from "./ContactForm";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useContext } from "react";
+import { ThemeContext, ThemeContextType } from "../App";
 import github from "../assets/github-142-svgrepo-com.svg";
 import telegram from "../assets/telegram-svgrepo-com.svg";
 import linkedin from "../assets/linkedin-svgrepo-com.svg";
@@ -20,6 +21,7 @@ interface ContactProps {
 }
 
 export default function Contact(props: ContactProps) {
+  const { theme } = useContext<ThemeContextType>(ThemeContext)
   const scrollRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: scrollRef,
@@ -54,29 +56,29 @@ export default function Contact(props: ContactProps) {
           notifications={props.notifications}
         />
         <motion.div
-          className="socials-container"
+          className={`${theme}-socials-container socials-container`}
           initial={{ x: 200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ ease: "easeOut", duration: 0.7 }}
         >
-          <a href="https://github.com/JonasHencke" className="social-link">
+          <a href="https://github.com/JonasHencke" className={`${theme}-social-link`}>
             <img src={github}></img>
             <div>GitHub</div>
           </a>
-          <a href="https://linkedin.com" className="social-link">
+          <a href="https://linkedin.com" className={`${theme}-social-link`}>
             <img src={linkedin}></img>
             <div>LinkedIn</div>
           </a>
-          <a href="https://xing.com" className="social-link">
+          <a href="https://xing.com" className={`${theme}-social-link`}>
             <img src={xing}></img>
             <div>Xing</div>
           </a>
-          <a href="mailto:henckejonas@googlemail.com" className="social-link">
+          <a href="mailto:henckejonas@googlemail.com" className={`${theme}-social-link`}>
             <img src={gmail}></img>
             <div>E-Mail</div>
           </a>
-          <a href="https://t.me/JonasHencke" className="social-link">
+          <a href="https://t.me/JonasHencke" className={`${theme}-social-link`}>
             <img src={telegram}></img>
             <div>Telegram</div>
           </a>

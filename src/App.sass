@@ -29,7 +29,7 @@ body
 
 @mixin glassmorphism
     background: rgba( 255, 255, 255, 0.3 )
-    box-shadow: 0 8px 32px 0 rgba( 100, 100, 100, 0.37 )
+    box-shadow: 0 4px 14px 0 rgba( 100, 100, 100, 0.37 )
     backdrop-filter: blur( 10px )
     -webkit-backdrop-filter: blur( 4px )
     border-radius: 10px
@@ -462,13 +462,27 @@ body
     flex-direction: column
     width: 35%
     gap: 1rem
-    background: #68cd86
     border-radius: 30px
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 2px 3px -1px
     input:focus
         outline: none
     textarea:focus
         outline: none
+
+.light-contact-form
+    background: #68cd86
+
+.dark-contact-form
+    background: #212121
+    input
+        background: #424242
+        color: white
+    textarea
+        background: #424242
+        color: white
+    .contact-form-button
+        background-color: #68cd86
+        color: #424242
 
 .contact-form-name
     margin-top: 1rem
@@ -493,7 +507,7 @@ body
 
 .contact-form-message
     width: 85%
-    border: #68cd86 1px solid
+    border: none
     border-radius: 15px
     resize: none
     height: 14rem
@@ -504,7 +518,7 @@ body
     -webkit-appearance: none
 
 .contact-form-button
-    border: #68cd86 1px solid
+    border: none
     width: 25%
     background-color: white
     border-radius: 15px
@@ -525,25 +539,28 @@ body
     flex-direction: column
     justify-content: space-evenly
     align-items: center
-    background-color: red
     width: 15%
     height: auto
     background: #68cd86
     border-radius: 30px
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 2px 3px -1px
 
-.social-link
+.dark-socials-container
+    background-color: #212121
+    box-shadow: none
+
+.dark-social-link, .light-social-link
     display: flex
     justify-content: start
     align-items: center
     @include font-size-xs
-    color: black
+    
     font-weight: 300
     gap: 10%
     height: 3.5rem
     width: 85%
     border-radius: 15px
-    background-color: white
+   
     box-shadow: inset rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, inset rgba(0, 0, 0, 0.3) 0px 2px 3px -1px
     cursor: pointer
     text-decoration: none
@@ -551,6 +568,14 @@ body
         width: 18%
         max-width: 45px
         margin-left: 5%
+.light-social-link
+    color: black
+    background-color: white
+
+.dark-social-link
+    background-color: #424242
+    color: white
+
 
 .social-link:hover
     width: 90%
