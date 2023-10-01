@@ -20,7 +20,7 @@ const initialContext: ThemeContextType = {
 export const ThemeContext = createContext<ThemeContextType>(initialContext)
 
 function App() {
-  const [theme, setTheme] = useState<"light" | "dark">("light")
+  const [theme, setTheme] = useState<"light" | "dark">("dark")
   const [notifications, setNotifications] = useState<
     { id: number; message: string }[]
   >([]);
