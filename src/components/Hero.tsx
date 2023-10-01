@@ -6,7 +6,7 @@ import profilePicture from "../assets/profile_picture.jpg";
 export default function Hero() {
   const { theme, setTheme } = useContext<ThemeContextType>(ThemeContext)
   return (
-    <section className={`${theme} hero-container`} id="hero">
+    <section className="hero-container" id="hero">
       <div className="hero-image-container">
         <motion.img
           src={profilePicture}
@@ -43,7 +43,7 @@ export default function Hero() {
       </motion.div>
       <a href="#about" className="hero-button-container">
         <motion.button
-          className="hero-button"
+          className={`${theme}-hero-button hero-button`}
           initial={{ y: 200, opacity: 0.5 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ ease: "easeOut", duration: 1 }}

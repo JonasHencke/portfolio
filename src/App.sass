@@ -6,7 +6,7 @@ html[data-theme='light']
 
 html[data-theme='dark']
     --text-color: white
-    --background-color: #252525
+    --background-color: #212121
 
 #root, body, html
     margin: 0px
@@ -105,7 +105,7 @@ body
     gap: 1rem
     width: 100%
     height: calc(100vh - 2rem)
-    background-color: white
+    
     margin-top: 2rem
     img
         width: clamp(200px, 30%, 400px)
@@ -113,9 +113,6 @@ body
         border-radius: 50%
         filter: brightness(1.15)
 
-.dark
-    background-color: #252525
-    color: white
 
 .hero-image-container
     display: flex
@@ -146,6 +143,9 @@ body
     border: none
     padding: 1rem 2rem
     border-radius: 100px
+
+.dark-hero-button 
+    color: #212121
 
 .hero-button-container:hover
     transition: all .1s ease-in-out
@@ -258,7 +258,6 @@ body
     @include font-size-s
     text-align: center
     margin-bottom: 5%
-    color: black
     font-weight: 400
     
 
@@ -361,6 +360,9 @@ body
     img
         width: 2.5rem
 
+.dark-emblem
+    background-color: #212121
+    border: 1px solid #68cd86
     
 @media (max-width: 950px)
     .skill-container

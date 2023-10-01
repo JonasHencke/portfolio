@@ -12,7 +12,8 @@ import FramerMotion from "../assets/SVGs/framer-motion.svg";
 import Vite from "../assets/SVGs/vite.svg";
 import npm from "../assets/SVGs/npm.svg"
 import VSCode from "../assets/SVGs/vscode.svg"
-
+import { useEffect, useRef, useContext } from "react";
+import { ThemeContext, ThemeContextType } from "../App";
 import {
   motion,
   useAnimate,
@@ -21,10 +22,11 @@ import {
   useScroll,
   useTransform,
 } from "framer-motion";
-import { useEffect, useRef } from "react";
+
 
 export default function Skills() {
-  const [scope, animate] = useAnimate<any>();
+  const { theme } = useContext<ThemeContextType>(ThemeContext)
+  const [scope, animate] = useAnimate();
   const isInView = useInView(scope);
   const scrollRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -63,59 +65,59 @@ export default function Skills() {
         </div>
       </motion.div>
       <div className="skills-collection" ref={scope}>
-        <div className="skill-emblem">
+        <div className={`${theme}-emblem skill-emblem`}>
           <img src={HTML}></img>
           <div>HTML</div>
         </div>
-        <div className="skill-emblem">
+        <div className={`${theme}-emblem skill-emblem`}>
           <img src={CSS}></img>
           <div>CSS</div>
         </div>
-        <div className="skill-emblem">
+        <div className={`${theme}-emblem skill-emblem`}>
           <img src={Javascript}></img>
           <div>Javascript</div>
         </div>
-        <div className="skill-emblem">
+        <div className={`${theme}-emblem skill-emblem`}>
           <img src={Typescript}></img>
           <div>Typescript</div>
         </div>
-        <div className="skill-emblem">
+        <div className={`${theme}-emblem skill-emblem`}>
           <img src={React}></img>
           <div>React</div>
         </div>
-        <div className="skill-emblem">
+        <div className={`${theme}-emblem skill-emblem`}>
           <img src={ReactRouter}></img>
           <div>React-Router</div>
         </div>
-        <div className="skill-emblem">
+        <div className={`${theme}-emblem skill-emblem`}>
           <img src={FramerMotion}></img>
           <div>Framer Motion</div>
         </div>
-        <div className="skill-emblem">
+        <div className={`${theme}-emblem skill-emblem`}>
           <img src={SASS}></img>
           <div>SASS</div>
         </div>
-        <div className="skill-emblem">
+        <div className={`${theme}-emblem skill-emblem`}>
           <img src={Vite}></img>
           <div>Vite</div>
         </div>
-        <div className="skill-emblem">
+        <div className={`${theme}-emblem skill-emblem`}>
           <img src={Webpack}></img>
           <div>Webpack</div>
         </div>
-        <div className="skill-emblem">
+        <div className={`${theme}-emblem skill-emblem`}>
           <img src={Git}></img>
           <div>Git</div>
         </div>
-        <div className="skill-emblem">
+        <div className={`${theme}-emblem skill-emblem`}>
           <img src={GitHub}></img>
           <div>GitHub</div>
         </div>
-        <div className="skill-emblem">
+        <div className={`${theme}-emblem skill-emblem`}>
           <img src={VSCode}></img>
           <div>VSCode</div>
         </div>
-        <div className="skill-emblem">
+        <div className={`${theme}-emblem skill-emblem`}>
           <img src={npm}></img>
           <div>npm</div>
         </div>
