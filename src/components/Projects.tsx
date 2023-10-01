@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useContext } from "react";
+import { ThemeContext, ThemeContextType } from "../App";
 import WetterApp from "../assets/Wetter-app.png";
 import CVGenerator from "../assets/CV-generator.png";
 import BookNook from "../assets/BookNook.png";
@@ -7,6 +8,7 @@ import githubSVG from "../assets/github-142-svgrepo-com.svg";
 import livepageSVG from "../assets/website-webpage-url-domain-svgrepo-com.svg";
 
 export default function Projects() {
+  const { theme } = useContext<ThemeContextType>(ThemeContext)
   const scrollRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: scrollRef,
@@ -43,7 +45,7 @@ export default function Projects() {
       >
         <div className="project-image-container">
           <div className="project-header">E-commerce Webshop</div>
-          <img src={BookNook} className="project-image"></img>
+          <img src={BookNook} className={`project-image-${theme} project-image`}></img>
         </div>
         <div className="project-button-container">
           <div className="project-button">
@@ -79,7 +81,7 @@ export default function Projects() {
         </div>
         <div className="project-image-container">
           <div className="project-header">Wetter App</div>
-          <img src={WetterApp} className="project-image"></img>
+          <img src={WetterApp} className={`project-image-${theme} project-image`}></img>
         </div>
       </motion.div>
       <motion.div
@@ -91,7 +93,7 @@ export default function Projects() {
       >
         <div className="project-image-container">
           <div className="project-header">Lebenslauf Generator</div>
-          <img src={CVGenerator} className="project-image"></img>
+          <img src={CVGenerator} className={`project-image-${theme} project-image`}></img>
         </div>
         <div className="project-button-container">
           <div className="project-button">
