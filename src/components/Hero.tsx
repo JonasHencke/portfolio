@@ -4,7 +4,7 @@ import { ThemeContext, ThemeContextType } from "../App";
 import profilePicture from "../assets/profile_picture.jpg";
 
 export default function Hero() {
-  const { theme, setTheme } = useContext<ThemeContextType>(ThemeContext)
+  const { theme } = useContext<ThemeContextType>(ThemeContext)
   return (
     <section className="hero-container" id="hero">
       <div className="hero-image-container">
@@ -23,7 +23,6 @@ export default function Hero() {
       >
         Jonas Hencke
       </motion.div>
-      <button onClick={() => setTheme(theme ==="light" ? "dark" : "light")}></button>
       <motion.div
         className="hero-title"
         initial={{ y: 200, opacity: 0 }}

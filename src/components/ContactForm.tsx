@@ -76,17 +76,20 @@ export const ContactUs = (props: ContactUsProps) => {
           name="user_name"
           className="contact-form-name"
           placeholder="Ihr Name"
+          required
         />
         <input
           type="email"
           name="user_email"
           className="contact-form-mail"
           placeholder="Ihre E-Mail"
+          required
         />
         <textarea
           name="message"
           className="contact-form-message"
           placeholder="Ihre Nachricht"
+          required
         />
         <input type="submit" value="Send" className="contact-form-button" />
       </motion.form>

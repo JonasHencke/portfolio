@@ -7,6 +7,7 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import ScrollSpy from "react-ui-scrollspy";
 import Notifications from "./components/Notifications";
+import ThemeSwitch from "./components/ThemeSwitch";
 import { useEffect, useState, createContext } from "react";
 
 export interface ThemeContextType {
@@ -36,6 +37,7 @@ function App() {
         theme,
         setTheme
       }}>
+      <ThemeSwitch/>
       <Notifications
         notifications={notifications}
         setNotifications={setNotifications}
