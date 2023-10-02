@@ -21,10 +21,15 @@ const initialContext: ThemeContextType = {
 export const ThemeContext = createContext<ThemeContextType>(initialContext)
 
 function App() {
-  const [theme, setTheme] = useState<"light" | "dark">("dark")
+  const storedTheme = JSON.parse(localStorage.getItem('theme'))
+  const [theme, setTheme] = useState(storedTheme ? storedTheme : "light")
   const [notifications, setNotifications] = useState<
     { id: number; message: string }[]
   >([]);
+
+  useEffect(() => {
+    localStorage.setItem('theme', JSON.stringify(theme))
+  })
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
