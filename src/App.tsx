@@ -28,7 +28,6 @@ function App() {
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
-    console.log("the shit has switched!")
   }, [theme])
   return (
     <div data-theme={theme}>

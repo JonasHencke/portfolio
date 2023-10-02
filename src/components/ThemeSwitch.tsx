@@ -8,6 +8,6 @@ export default function ThemeSwitch() {
     <motion.button
       className={`${theme}-themeswitch`}
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-    >🎚️</motion.button>
+    >{theme == "light" ? "🌙" : "☀️"}</motion.button>
   );
 }
