@@ -16,7 +16,7 @@ interface ContactUsProps {
 }
 export const ContactUs = (props: ContactUsProps) => {
   const { theme } = useContext<ThemeContextType>(ThemeContext)
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
 
   function addNotification(message: string) {
     const id = Math.floor(Math.random() * 500)
@@ -33,17 +33,17 @@ export const ContactUs = (props: ContactUsProps) => {
   }
 
   function resetContactForm() {
-    document.getElementById("contact-form").reset();
+    (document.getElementById("contact-form") as HTMLFormElement).reset();
   }
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
         "service_nbxn6gm",
         "template_45givuk",
-        form.current,
+        e.currentTarget,
         "h12ZDsqnnyJy872s_"
       )
       .then(
