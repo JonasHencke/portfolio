@@ -12,6 +12,7 @@ import FramerMotion from "../assets/SVGs/light/framer-motion.svg";
 import Vite from "../assets/SVGs/light/vite.svg";
 import npm from "../assets/SVGs/light/npm.svg"
 import VSCode from "../assets/SVGs/light/vscode.svg"
+import Firebase from "../assets/SVGs/light/firebase.svg"
 import HTMLDark from "../assets/SVGs/dark/html.svg"
 import CSSDark from "../assets/SVGs/dark/css.svg";
 import JavascriptDark from "../assets/SVGs/dark/javascript.svg";
@@ -26,6 +27,7 @@ import FramerMotionDark from "../assets/SVGs/dark/framer-motion.svg";
 import ViteDark from "../assets/SVGs/dark/vite.svg";
 import npmDark from "../assets/SVGs/dark/npm.svg"
 import VSCodeDark from "../assets/SVGs/dark/vscode.svg"
+import FirebaseDark from "../assets/SVGs/dark/firebase.svg"
 import { useEffect, useRef, useContext } from "react";
 import { ThemeContext, ThemeContextType } from "../App";
 import {
@@ -134,6 +136,10 @@ export default function Skills() {
         <div className={`${theme}-emblem skill-emblem`}>
           <img src={theme == "light" ? npm : npmDark}></img>
           <div>npm</div>
+        </div>
+        <div className={`${theme}-emblem skill-emblem`}>
+          <img src={theme == "light" ? Firebase : FirebaseDark}></img>
+          <div>Firebase</div>
         </div>
       </div>
     </section>
