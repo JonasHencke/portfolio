@@ -52,15 +52,21 @@ body
 
 /* ------------------------------------ */
 /* ThemeSwitch component */
+
 .light-themeswitch, .dark-themeswitch
     position: fixed
-    bottom: 5vw
+    bottom: 10vh
     left: 5vw
     z-index: 100
     font-size: 25px
     @include glassmorphism
-    padding: 5px
     border-radius: 30px
+    width: 40px
+    height: 40px
+
+@media (max-width: 1000px) 
+    .light-themeswitch, .dark-themeswitch
+        bottom: 15vh
     
 /* ------------------------------------ */
 /* Navbar component */
