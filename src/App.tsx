@@ -22,7 +22,6 @@ export const ThemeContext = createContext<ThemeContextType>(initialContext)
 
 function App() {
   const storedTheme = localStorage.getItem("theme")
-  console.log(localStorage)
   const [theme, setTheme] = useState(storedTheme ? JSON.parse(storedTheme) : "light")
   const [notifications, setNotifications] = useState<
     { id: number; message: string }[]

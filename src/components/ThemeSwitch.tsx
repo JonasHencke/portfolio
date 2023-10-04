@@ -13,6 +13,6 @@ export default function ThemeSwitch() {
       animate={{ x: 0, opacity: 1 }}
       transition={{ ease: "easeOut", duration: 1 }}
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-    >{theme == "light" ? <img src={Moon}></img> : <img src={Sun}></img>}</motion.button>
+    >{theme == "light" ? <img  alt="Dark Mode icon" src={Moon}></img> : <img  alt="light mode icon" src={Sun}></img>}</motion.button>
   );
 }

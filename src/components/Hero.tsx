@@ -10,6 +10,7 @@ export default function Hero() {
       <div className="hero-image-container">
         <motion.img
           src={profilePicture}
+          alt="Profilbild von Jonas Hencke"
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ type: "spring", duration: 1 }}

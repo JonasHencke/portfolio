@@ -82,63 +82,63 @@ export default function Skills() {
       </motion.div>
       <div className="skills-collection" ref={scope}>
         <div className={`${theme}-emblem skill-emblem`}>
-          <img src={theme == "light" ? HTML : HTMLDark}></img>
+          <img alt="HTML icon" src={theme == "light" ? HTML : HTMLDark}></img>
           <div>HTML</div>
         </div>
         <div className={`${theme}-emblem skill-emblem`}>
-          <img src={theme == "light" ? CSS : CSSDark}></img>
+          <img alt="CSS icon" src={theme == "light" ? CSS : CSSDark}></img>
           <div>CSS</div>
         </div>
         <div className={`${theme}-emblem skill-emblem`}>
-          <img src={theme == "light" ? Javascript : JavascriptDark}></img>
+          <img  alt="Javascript icon" src={theme == "light" ? Javascript : JavascriptDark}></img>
           <div>Javascript</div>
         </div>
         <div className={`${theme}-emblem skill-emblem`}>
-          <img src={theme == "light" ? Typescript : TypescriptDark}></img>
+          <img  alt="Typescript icon" src={theme == "light" ? Typescript : TypescriptDark}></img>
           <div>Typescript</div>
         </div>
         <div className={`${theme}-emblem skill-emblem`}>
-          <img src={theme == "light" ? React : ReactDark}></img>
+          <img  alt="React icon" src={theme == "light" ? React : ReactDark}></img>
           <div>React</div>
         </div>
         <div className={`${theme}-emblem skill-emblem`}>
-          <img src={theme == "light" ? ReactRouter : ReactRouterDark}></img>
+          <img  alt="React-Router icon" src={theme == "light" ? ReactRouter : ReactRouterDark}></img>
           <div>React-Router</div>
         </div>
         <div className={`${theme}-emblem skill-emblem`}>
-          <img src={theme == "light" ? FramerMotion : FramerMotionDark}></img>
+          <img  alt="Framer Motion icon" src={theme == "light" ? FramerMotion : FramerMotionDark}></img>
           <div>Framer Motion</div>
         </div>
         <div className={`${theme}-emblem skill-emblem`}>
-          <img src={theme == "light" ? SASS : SASSDark}></img>
+          <img  alt="SASS icon" src={theme == "light" ? SASS : SASSDark}></img>
           <div>SASS</div>
         </div>
         <div className={`${theme}-emblem skill-emblem`}>
-          <img src={theme == "light" ? Vite : ViteDark}></img>
+          <img  alt="Vite icon" src={theme == "light" ? Vite : ViteDark}></img>
           <div>Vite</div>
         </div>
         <div className={`${theme}-emblem skill-emblem`}>
-          <img src={theme == "light" ? Webpack : WebpackDark}></img>
+          <img  alt="Webpack icon" src={theme == "light" ? Webpack : WebpackDark}></img>
           <div>Webpack</div>
         </div>
         <div className={`${theme}-emblem skill-emblem`}>
-          <img src={theme == "light" ? Git : GitDark}></img>
+          <img  alt="Git icon" src={theme == "light" ? Git : GitDark}></img>
           <div>Git</div>
         </div>
         <div className={`${theme}-emblem skill-emblem`}>
-          <img src={theme == "light" ? GitHub : GitHubDark}></img>
+          <img  alt="GitHub icon" src={theme == "light" ? GitHub : GitHubDark}></img>
           <div>GitHub</div>
         </div>
         <div className={`${theme}-emblem skill-emblem`}>
-          <img src={theme == "light" ? VSCode : VSCodeDark}></img>
+          <img  alt="VSCode icon" src={theme == "light" ? VSCode : VSCodeDark}></img>
           <div>VSCode</div>
         </div>
         <div className={`${theme}-emblem skill-emblem`}>
-          <img src={theme == "light" ? npm : npmDark}></img>
+          <img  alt="npm icon" src={theme == "light" ? npm : npmDark}></img>
           <div>npm</div>
         </div>
         <div className={`${theme}-emblem skill-emblem`}>
-          <img src={theme == "light" ? Firebase : FirebaseDark}></img>
+          <img  alt="Firebase icon" src={theme == "light" ? Firebase : FirebaseDark}></img>
           <div>Firebase</div>
         </div>
       </div>

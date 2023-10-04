@@ -45,17 +45,17 @@ export default function Projects() {
       >
         <div className="project-image-container">
           <div className="project-header">E-commerce Webshop</div>
-          <img src={BookNook} className={`project-image-${theme} project-image`}></img>
+          <img alt="Screenshot von E-commerce Webshop" src={BookNook} className={`project-image-${theme} project-image`}></img>
         </div>
         <div className="project-button-container">
           <div className="project-button">
             <a href="https://jonashencke.github.io/bookstore/#/">
-              <img src={livepageSVG}></img>
+              <img alt="Link zur E-commerce Livepage" src={livepageSVG}></img>
             </a>
           </div>
           <div className="project-button">
             <a href="https://github.com/JonasHencke/bookstore">
-              <img src={githubSVG}></img>
+              <img alt="Link zur E-commerce GitHub Seite" src={githubSVG}></img>
             </a>
           </div>
         </div>
@@ -70,18 +70,18 @@ export default function Projects() {
         <div className="project-button-container">
           <div className="project-button">
             <a href="https://JonasHencke.github.io/weather-app/">
-              <img src={livepageSVG}></img>
+              <img alt="Link zur Wetter-App Livepage" src={livepageSVG}></img>
             </a>
           </div>
           <div className="project-button">
             <a href="https://github.com/JonasHencke/weather-app">
-              <img src={githubSVG}></img>
+              <img alt="Link zur Wetter App GitHub Seite" src={githubSVG}></img>
             </a>
           </div>
         </div>
         <div className="project-image-container">
           <div className="project-header">Wetter App</div>
-          <img src={WetterApp} className={`project-image-${theme} project-image`}></img>
+          <img alt="Screenshot von der Wetter-App" src={WetterApp} className={`project-image-${theme} project-image`}></img>
         </div>
       </motion.div>
       <motion.div
@@ -93,17 +93,17 @@ export default function Projects() {
       >
         <div className="project-image-container">
           <div className="project-header">Lebenslauf Generator</div>
-          <img src={CVGenerator} className={`project-image-${theme} project-image`}></img>
+          <img alt="Screenshot vom Lebenslauf Generator" src={CVGenerator} className={`project-image-${theme} project-image`}></img>
         </div>
         <div className="project-button-container">
           <div className="project-button">
             <a href="https://JonasHencke.github.io/CV-application/">
-              <img src={livepageSVG}></img>
+              <img alt="Link zur Lebenslauf Generator Livepage" src={livepageSVG}></img>
             </a>
           </div>
           <div className="project-button">
             <a href="https://github.com/JonasHencke/CV-application">
-              <img src={githubSVG}></img>
+              <img alt="Link zur Lebenslauf Generator GitHub Seite" src={githubSVG}></img>
             </a>
           </div>
         </div>

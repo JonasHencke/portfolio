@@ -63,23 +63,23 @@ export default function Contact(props: ContactProps) {
           transition={{ ease: "easeOut", duration: 0.7 }}
         >
           <a href="https://github.com/JonasHencke" className={`${theme}-social-link`}>
-            <img src={github}></img>
+            <img alt="GitHub icon" src={github}></img>
             <div>GitHub</div>
           </a>
           <a href="https://linkedin.com" className={`${theme}-social-link`}>
-            <img src={linkedin}></img>
+            <img alt="LinkedIn icon" src={linkedin}></img>
             <div>LinkedIn</div>
           </a>
           <a href="https://xing.com" className={`${theme}-social-link`}>
-            <img src={xing}></img>
+            <img alt="Xing icon" src={ xing}></img>
             <div>Xing</div>
           </a>
           <a href="mailto:henckejonas@googlemail.com" className={`${theme}-social-link`}>
-            <img src={gmail}></img>
+            <img alt="Mail icon" src={gmail}></img>
             <div>E-Mail</div>
           </a>
           <a href="https://t.me/JonasHencke" className={`${theme}-social-link`}>
-            <img src={telegram}></img>
+            <img alt="Telegram icon" src={telegram}></img>
             <div>Telegram</div>
           </a>
         </motion.div>
