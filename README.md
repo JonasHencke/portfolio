@@ -1,27 +1,33 @@
-# React + TypeScript + Vite
+# Portfolio
+![](https://i.imgur.com/umDL9wE.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Beschreibung
+Die Portfolio-Seite dient der Darstellung meines Tech-Stacks und meiner bisherigen Projekte.
+<br/>
+Sie verfügt über scroll-basierte Animationen durch die Animations-library "framer motion". Außerdem hat der Besucher die Möglichkeit zwischen einem hellen und einem dunklen Theme zu wechseln und durch LocalStorage wird der Modus auch nach erneutem Öffnen beibehalten.
 
-Currently, two official plugins are available:
+## Demo
+Link zum [Portfolio](https://jonashencke.github.io/portfolio/#skills) 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- responsive design für PC, Tablet und Smartphone
+- Scroll-basierte Animationen
+- light/dark theme und Switch-Funktion
+- ausgewähltes theme wird im localstorage gespeichert
+- Navbar, welche den derzeitigen Sichtbereich markiert
+- Formular, welches über die Plattform 'EmailJS' das Absenden von Emails an mich ermöglicht
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Verwendete Technologien
+- Typescript
+- React
+- SASS
+- Vite
+- Context API (state management)
+- Framer Motion
+## Quellen
+- die auf der Website verwendeten SVGs stammen allesamt von [SVGRepo](https://www.svgrepo.com/). Teilweise habe ich diese per Code oder mit dem Programm "Affinity Designer" verändert.
+## Google Lighthouse
+Die Analyse von Google Lighthouse hat die Web-Applikation wie folgt bewertet:
+![](https://i.imgur.com/gkhEmea.png)
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
