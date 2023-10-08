@@ -26,9 +26,9 @@ export default function About() {
       <div className="about-text">
         Angefangen mit <span>HTML</span>, <span>CSS</span> und{" "}
         <span>Javascript</span> machte ich meine ersten Erfahrungen in der
-        Webentwicklung und der Wunsch Programmieren auf professioneller Ebene
+        Webentwicklung. Der Wunsch Programmieren auf professioneller Ebene
         auszuführen, entwickelte sich zügig. Einige Monate sind seitdem
-        vergangen und mittlerweile programmiere ich leidenschafltich mit dem
+        vergangen und mittlerweile programmiere ich leidenschafltich Webanwendungen mit dem
         Javascript-Framework <span>React</span>.<br />
         <br />
         Für meine Web-Anwendungen verwende ich <span>Typescript</span> oder{" "}

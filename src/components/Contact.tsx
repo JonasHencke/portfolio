@@ -21,7 +21,7 @@ interface ContactProps {
 }
 
 export default function Contact(props: ContactProps) {
-  const { theme } = useContext<ThemeContextType>(ThemeContext)
+  const { theme } = useContext<ThemeContextType>(ThemeContext);
   const scrollRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: scrollRef,
@@ -45,9 +45,11 @@ export default function Contact(props: ContactProps) {
         <div className="contact-header">Kontakt</div>
         <div className="contact-text">
           Mit dem Ausfüllen und Senden des Formulars erhalte ich eine Mail mit
-          Ihrer Nachricht, so können Sie mich schnellstmöglich erreichen.
-          Ansonsten können Sie mich auf den aufgeführten Plattformen finden und
-          Kontaktieren. Ich freue mich von Ihnen zu hören.
+          Ihrer Nachricht. Auf diese Weise können Sie mich schnellstmöglich
+          erreichen. <br />
+          Ansonsten gelangen Sie mit den Links zu den aufgeführten Plattformen
+          auf mein Profil und haben die Möglichkeit mich dort zu kontaktieren.
+          Ich freue mich von Ihnen zu hören.
         </div>
       </motion.div>
       <div className="contact-flex-container">
@@ -62,26 +64,33 @@ export default function Contact(props: ContactProps) {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ ease: "easeOut", duration: 0.7 }}
         >
-          <a href="https://github.com/JonasHencke" className={`${theme}-social-link`}>
+          <a
+            href="https://github.com/JonasHencke"
+            className={`${theme}-social-link`}
+          >
             <img alt="GitHub icon" src={github}></img>
             <div>GitHub</div>
           </a>
-          <a href="https://linkedin.com" className={`${theme}-social-link`}>
+          <a href="https://www.linkedin.com/in/jonas-hencke-451b46294/" className={`${theme}-social-link`}>
             <img alt="LinkedIn icon" src={linkedin}></img>
             <div>LinkedIn</div>
           </a>
-          <a href="https://xing.com" className={`${theme}-social-link`}>
-            <img alt="Xing icon" src={ xing}></img>
+          <a href="https://www.xing.com/profile/Jonas_Hencke/cv" className={`${theme}-social-link`}>
+            <img alt="Xing icon" src={xing}></img>
             <div>Xing</div>
-          </a>
-          <a href="mailto:henckejonas@googlemail.com" className={`${theme}-social-link`}>
-            <img alt="Mail icon" src={gmail}></img>
-            <div>E-Mail</div>
           </a>
           <a href="https://t.me/JonasHencke" className={`${theme}-social-link`}>
             <img alt="Telegram icon" src={telegram}></img>
             <div>Telegram</div>
           </a>
+          <a
+            href="mailto:henckejonas@googlemail.com"
+            className={`${theme}-social-link`}
+          >
+            <img alt="Mail icon" src={gmail}></img>
+            <div>E-Mail</div>
+          </a>
+          
         </motion.div>
       </div>
     </section>

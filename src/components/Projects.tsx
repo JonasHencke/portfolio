@@ -8,7 +8,7 @@ import githubSVG from "../assets/github-142-svgrepo-com.svg";
 import livepageSVG from "../assets/website-webpage-url-domain-svgrepo-com.svg";
 
 export default function Projects() {
-  const { theme } = useContext<ThemeContextType>(ThemeContext)
+  const { theme } = useContext<ThemeContextType>(ThemeContext);
   const scrollRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: scrollRef,
@@ -31,9 +31,13 @@ export default function Projects() {
       >
         <div className="projects-header">Projekte</div>
         <div className="projects-text">
-          Eine Auswahl meiner Projekte. <br /> Über die Buttons gelangt man zur
-          Live-Version und zu der jeweiligen GitHub repository, in welcher der
-          Quellcode und die Beschreibung eingesehen werden kann.
+          In diesem Abschnitt finden Sie eine Auswahl meiner bisherigen
+          Projekte. Über die Symbole gelangt man zur Live-Version und zu der
+          jeweiligen GitHub repository.
+          <br />
+          Jede GitHub repository enthält neben dem Quellcode auch eine
+          detaillierte Beschreibung hinsichtlich der Features, dem verwendeten
+          Techstack und der Herangehensweise an das Projekt.
         </div>
       </motion.div>
       <motion.div
@@ -45,7 +49,11 @@ export default function Projects() {
       >
         <div className="project-image-container">
           <div className="project-header">E-commerce Webshop</div>
-          <img alt="Screenshot von E-commerce Webshop" src={BookNook} className={`project-image-${theme} project-image`}></img>
+          <img
+            alt="Screenshot von E-commerce Webshop"
+            src={BookNook}
+            className={`project-image-${theme} project-image`}
+          ></img>
         </div>
         <div className="project-button-container">
           <div className="project-button">
@@ -81,7 +89,11 @@ export default function Projects() {
         </div>
         <div className="project-image-container">
           <div className="project-header">Wetter App</div>
-          <img alt="Screenshot von der Wetter-App" src={WetterApp} className={`project-image-${theme} project-image`}></img>
+          <img
+            alt="Screenshot von der Wetter-App"
+            src={WetterApp}
+            className={`project-image-${theme} project-image`}
+          ></img>
         </div>
       </motion.div>
       <motion.div
@@ -93,17 +105,27 @@ export default function Projects() {
       >
         <div className="project-image-container">
           <div className="project-header">Lebenslauf Generator</div>
-          <img alt="Screenshot vom Lebenslauf Generator" src={CVGenerator} className={`project-image-${theme} project-image`}></img>
+          <img
+            alt="Screenshot vom Lebenslauf Generator"
+            src={CVGenerator}
+            className={`project-image-${theme} project-image`}
+          ></img>
         </div>
         <div className="project-button-container">
           <div className="project-button">
             <a href="https://JonasHencke.github.io/CV-application/">
-              <img alt="Link zur Lebenslauf Generator Livepage" src={livepageSVG}></img>
+              <img
+                alt="Link zur Lebenslauf Generator Livepage"
+                src={livepageSVG}
+              ></img>
             </a>
           </div>
           <div className="project-button">
             <a href="https://github.com/JonasHencke/CV-application">
-              <img alt="Link zur Lebenslauf Generator GitHub Seite" src={githubSVG}></img>
+              <img
+                alt="Link zur Lebenslauf Generator GitHub Seite"
+                src={githubSVG}
+              ></img>
             </a>
           </div>
         </div>
