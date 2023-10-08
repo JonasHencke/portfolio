@@ -51,6 +51,7 @@ function App() {
         activeClass="ss-active-demo-2"
         scrollThrottle={50}
         useBoxMethod={true}
+        updateHistoryStack={false}
       >
         <Hero />
         <About />
