@@ -48,7 +48,7 @@ export default function Projects() {
         transition={{ ease: "easeOut", duration: 0.7 }}
       >
         <div className="project-image-container">
-          <div className="project-header">E-commerce Webshop</div>
+          <div className="project-header">E-commerce Buchshop</div>
           <img
             alt="Screenshot von E-commerce Webshop"
             src={BookNook}

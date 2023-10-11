@@ -12,7 +12,7 @@ export default function Navbar() {
       transition={{ ease: "easeOut", duration: 0.6 }}
     >
       <a href="#hero">
-        <p data-to-scrollspy-id="hero" className={`${theme}-navbar-link`}>Home</p>
+        <p data-to-scrollspy-id="hero" className={`${theme}-navbar-link`}>Start</p>
       </a>
       <a href="#about">
         <p data-to-scrollspy-id="about" className={`${theme}-navbar-link`}>Über mich</p>
