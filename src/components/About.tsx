@@ -26,20 +26,20 @@ export default function About() {
       <div className="about-text">
         Angefangen mit <span>HTML</span>, <span>CSS</span> und{" "}
         <span>Javascript</span> machte ich meine ersten Erfahrungen in der
-        Webentwicklung. Der Wunsch Programmieren auf professioneller Ebene
+        Webentwicklung. Der Wunsch, Programmieren auf professioneller Ebene
         auszuführen, entwickelte sich zügig. Einige Monate sind seitdem
-        vergangen und mittlerweile programmiere ich leidenschafltich Webanwendungen mit dem
+        vergangen und mittlerweile programmiere ich leidenschatlich Webanwendungen mit dem
         Javascript-Framework <span>React</span>.<br />
         <br />
         Für meine Web-Anwendungen verwende ich <span>Typescript</span> oder{" "}
-        <span>Javascript</span>, <span>Context</span> zum managen von State und{" "}
-        <span>React-Router</span> zum erstellen komplexer Web-Anwendungen. Für
+        <span>Javascript</span>, <span>Context</span> zum Managen von State und{" "}
+        <span>React-Router</span> zum Erstellen komplexer Web-Anwendungen. Für
         das Styling nutze ich gerne den CSS Pre-Processor <span>SASS</span> und
         Animationen auf meinen Seiten erstelle ich über die{" "}
         <span>Framer Motion</span> Library.
         <br />
         <br />
-        Für viele weiteren Technologien bin ich offen. Neben dem Frontend habe
+        Für viele weitere Technologien bin ich offen. Neben dem Frontend habe
         ich auch großes Interesse für Technologien im Backend. Erfahrungen mit dem
         Backend-as-a-Service Programm <span>Firebase</span> habe ich
         bereits gemacht. Auch habe ich bereits verschiedene <span>APIs</span> in meinen Projekten ausprobiert.

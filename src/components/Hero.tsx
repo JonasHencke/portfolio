@@ -39,7 +39,7 @@ export default function Hero() {
         transition={{ ease: "easeOut", duration: 0.9 }}
       >
         Begeistert von gutem Design und modernen Technologien. Mit viel Neugier
-        und dem Ziel lebenslang zu lernen.
+        und dem Ziel, lebenslang zu lernen.
       </motion.div>
       <a href="#about" className="hero-button-container">
         <motion.button

@@ -48,7 +48,7 @@ export default function Contact(props: ContactProps) {
           Ihrer Nachricht. Auf diese Weise können Sie mich schnellstmöglich
           erreichen. <br />
           Ansonsten gelangen Sie mit den Links zu den aufgeführten Plattformen
-          auf mein Profil und haben die Möglichkeit mich dort zu kontaktieren.
+          auf mein Profil und haben die Möglichkeit, mich dort zu kontaktieren.
           Ich freue mich von Ihnen zu hören.
         </div>
       </motion.div>
