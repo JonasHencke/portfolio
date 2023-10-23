@@ -28,7 +28,7 @@ export default function About() {
         <span>Javascript</span> machte ich meine ersten Erfahrungen in der
         Webentwicklung. Der Wunsch, Programmieren auf professioneller Ebene
         auszuführen, entwickelte sich zügig. Einige Monate sind seitdem
-        vergangen und mittlerweile programmiere ich leidenschatlich Webanwendungen mit dem
+        vergangen und mittlerweile programmiere ich leidenschaftlich Webanwendungen mit dem
         Javascript-Framework <span>React</span>.<br />
         <br />
         Für meine Web-Anwendungen verwende ich <span>Typescript</span> oder{" "}
