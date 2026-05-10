@@ -1,0 +1,12 @@
+.privacy {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  font-family: sans-serif;
+  line-height: 1.7;
+}
+
+.privacy h1,
+.privacy h2 {
+  margin-top: 2rem;
+}
