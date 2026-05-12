@@ -1,5 +1,5 @@
 import ReactMarkdown from "react-markdown";
-import "./Privacy.css";
+import "./Markdown.css";
 
 const content = `
 ## Privacy Policy
@@ -37,7 +37,7 @@ If you have any questions or suggestions about this Privacy Policy, do not hesit
 
 export default function Privacy() {
   return (
-    <main className="privacy">
+    <main className="markdown">
       <ReactMarkdown>{content}</ReactMarkdown>
     </main>
   );
